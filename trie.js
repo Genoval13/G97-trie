@@ -1,11 +1,18 @@
 class Node {
-  constructor() {
+  constructor(data) {
+    this.key = data;
+    this.children = {};
+    this.end = false;
   }
 }
 
 class Trie {
   constructor() {
-
+    this.root = {
+      children: {},
+      end: false,
+      key: null
+    };
   }
 
   insert(word) {

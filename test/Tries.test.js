@@ -1,13 +1,13 @@
 const expect = require("chai").expect; // eslint-disable-line
 const { Node, Trie } = require("../trie.js");
 
-describe("Node for Trie", () => {
+xdescribe("Node for Trie", () => {
   it("should create a new node", () => {
     expect(new Node("x")).to.eql({ key: "x", children: {}, end: false });
   });
 });
 
-describe("Trie constructed", () => {
+xdescribe("Trie constructed", () => {
   it("should create a new trie", () => {
     expect(new Trie()).to.eql({
       root: { key: null, children: {}, end: false }
@@ -41,7 +41,7 @@ describe("Word inserted to Trie", () => {
   });
 });
 
-describe("Contains function", () => {
+xdescribe("Contains function", () => {
   it("should return boolean for if work exists in trie", () => {
     let myTrie = new Trie();
     myTrie.insert("a");
@@ -57,7 +57,7 @@ describe("Contains function", () => {
   });
 });
 
-describe("Remove function", () => {
+xdescribe("Remove function", () => {
   it("should remove a word from a trie", () => {
     let myTrie = new Trie;
     myTrie.insert('a');
@@ -76,7 +76,7 @@ describe("Remove function", () => {
   });
 });
 
-describe("Search for words given a prefix", () => {
+xdescribe("Search for words given a prefix", () => {
     let myTrie = new Trie;
     myTrie.insert('an');
     myTrie.insert('a');
